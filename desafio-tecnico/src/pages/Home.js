@@ -1,6 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
+import  ToDoList  from "../components/ToDoList";
+
+
 const home  = () => {
-return (
-<h1>Ebytr To do list</h1>
+  return (
+    <BrowserRouter>
+      <h1>Ebytr To do list</h1>
+      <ToDoList/>
+    </BrowserRouter>
 );
 }
 
