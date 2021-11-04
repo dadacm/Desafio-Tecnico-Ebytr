@@ -1,4 +1,5 @@
 const express = require('express');
+const toDoRoute = require('./Routes/toDoListRoute');
 
 const app = express();
 
@@ -10,6 +11,8 @@ const PORT = 3001;
 app.get('/', (_request, response) => {
   console.log('funcionando');
 });
+
+app.use('/list', toDoRoute)
 
 app.listen(PORT, () => {
   console.log('Online');

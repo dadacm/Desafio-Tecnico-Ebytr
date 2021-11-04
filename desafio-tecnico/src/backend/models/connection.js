@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 
-const MONGO_DB_URL = 'mongodb://localhost/todoDb';
+const MONGO_DB_URL = 'mongodb://localhost/';
 
 const DB_NAME = 'to-do-list';
 const OPTIONS = {
